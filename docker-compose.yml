@@ -2,7 +2,7 @@ version: "3"
 services:
   nginx-lb:
     image: nginx:latest
-    container_name: nginx-lb
+    container_name: nginx-lb1
     ports:
       - "80:80"
     volumes:
