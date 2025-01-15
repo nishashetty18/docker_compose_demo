@@ -6,6 +6,8 @@ services:
       - "5000:5000"
     depends_on:
       - db
+    volumes:
+      - app-data: /demo
 
   db:
     image: mysql:8.0
@@ -14,3 +16,5 @@ services:
       MYSQL_DATABASE: demo
     ports:
       - "3306:3306"
+volumes:
+  app-data: 
